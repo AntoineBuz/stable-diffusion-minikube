@@ -23,6 +23,7 @@ This is supposed to run on an Ubuntu22.04 distro (dedicated cuda Docker image) b
     1. [Start your cluster](#start-cluster)
     2. [Load your image](#load-your-image)
     3. [Launch a deployement](#launch-a-deployement)
+3. [References](#references)
 
 ## Image setup 
 
@@ -155,3 +156,17 @@ Events:
 ```
 
 Go visit your running app in your browser with http://adress:7860 !
+
+## References
+
+Stable-Diffusion-v1-5 model is taken from [Runwayml on HuggingFace](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+```
+@InProceedings{Rombach_2022_CVPR,
+    author    = {Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj\"orn},
+    title     = {High-Resolution Image Synthesis With Latent Diffusion Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {10684-10695}
+}
+```
