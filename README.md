@@ -157,6 +157,8 @@ Events:
 
 Go visit your running app in your browser with http://adress:7860 !
 
+![App preview](./img/containers_at_sea.png)
+
 ## References
 
 Stable-Diffusion-v1-5 model is taken from [Runwayml on HuggingFace](https://huggingface.co/runwayml/stable-diffusion-v1-5)
