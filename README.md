@@ -18,8 +18,8 @@ This is supposed to run on an Ubuntu22.04 distro (dedicated cuda Docker image) b
 ### Image build
 
 ```bash
-git clone xxx
-cd ./xx
+git clone git@github.com:AntoineBuz/stable-diffusion-minikube.git
+cd ./stable-diffusion-minikube
 docker build -t sd . # Let's call it sd (you can name it as you want)
 ```
 
@@ -43,7 +43,7 @@ docker run -d --gpus all -p 7860:7860 sd
 
 Access the app within your favorite browser on [127.0.0.1:7860](http://127.0.0.1:7860)
 
-## K8S deployment (tested on Minikube)
+## K8S deployement (tested on Minikube)
 
 ### Start Cluster
 *This part is deeply inspired from [minikube documentation](https://minikube.sigs.k8s.io/docs/tutorials/nvidia/)*
