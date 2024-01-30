@@ -116,7 +116,7 @@ This step aims at loading the image into Minikube Container. Two options :
 
     ```bash
     eval $(minikube docker-env) # You are now inside gcr.io/k8s-minikube/... container
-    docker build -t image .
+    docker build -t sd .
     docker images # To check for your image to be built
     ```
 
