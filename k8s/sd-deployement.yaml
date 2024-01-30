@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sd
+  name: sd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sd
+  template:
+    metadata:
+      labels:
+        app: sd
+    spec:
+      containers:
+      - image: sd:latest
+        name: sd
+        resources: {}
+        imagePullPolicy: Never # Set it to Always if you pull the image from a docker repository
