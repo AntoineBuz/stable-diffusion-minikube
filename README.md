@@ -1,5 +1,11 @@
 # Stable Diffusion app, deployed with Minikube
 
+![Static Badge](https://img.shields.io/badge/Minikube-blue)
+![Static Badge](https://img.shields.io/badge/HuggingFace-yellow)
+![Static Badge](https://img.shields.io/badge/gradio-orange)
+![Static Badge](https://img.shields.io/badge/GPU-%23009900)
+![Static Badge](https://img.shields.io/badge/port-7860-green)
+
 **This project aims at giving resources to deploy containerized ML apps with Kubernetes.**
 
 Main difficulty is handling gpu usage while running apps in containers.
