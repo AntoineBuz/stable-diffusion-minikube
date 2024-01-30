@@ -13,7 +13,7 @@ This is supposed to run on an Ubuntu22.04 distro (dedicated cuda Docker image) b
 - **Docker installed** : See basic [installation documentation](https://docs.docker.com/engine/install/) if needed.
 - **Cuda drivers installed** for your Nvidia GPU.
 - **Cuda container toolkit installed** : See nvidia container toolkit [documentation](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/1.14.4/install-guide.html)
-- **Have a K8S cluster (here Minikube)**
+- **Have a K8S cluster (we use Minikube here)**
 
 ### Image build
 
@@ -91,14 +91,14 @@ Allocatable:
 
 This step aims at loading the image into Minikube Container. Two options :
 
-- **1st option :** You can load the image into minikube with `minikube image load image` or using `docker pull repo/image`. You can setup a local docker registry and push your image into it before pulling it from minikube.
+- **1st option :** You can load the image into minikube with `minikube image load <image>` or using `docker pull <repo/image>`. You can setup a local docker registry and push your image into it before pulling it from minikube.
 
 - **2nd option :** Also, you can build it directly from the [minikube container itself](https://minikube.sigs.k8s.io/docs/commands/docker-env/) (this option requires to re-download everything)
 
     ```bash
     eval $(minikube docker-env) # You are now inside gcr.io/k8s-minikube/... container
     docker build -t image .
-    docker images # To check for your image to be builf
+    docker images # To check for your image to be built
     ```
 
 ### Launch a deployement
