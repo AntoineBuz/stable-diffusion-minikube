@@ -19,10 +19,10 @@ This is supposed to run on an Ubuntu22.04 distro (dedicated cuda Docker image) b
    2. [Image build](#image-build)
    3. [Container run](#container-run)
    4. [Access the app](#access)
-2. [K8S deployement](#k8s-deployement)
+2. [K8S deployment](#k8s-deployment)
     1. [Start your cluster](#start-cluster)
     2. [Load your image](#load-your-image)
-    3. [Launch a deployement](#launch-a-deployement)
+    3. [Launch a deployment](#launch-a-deployment)
 3. [References](#references)
 
 ## Image setup 
@@ -62,7 +62,7 @@ docker run -d --gpus all -p 7860:7860 sd
 
 Access the app within your favorite browser on [127.0.0.1:7860](http://127.0.0.1:7860)
 
-## K8S deployement
+## K8S deployment
 
 ### Start Cluster
 *This part is deeply inspired from [minikube documentation](https://minikube.sigs.k8s.io/docs/tutorials/nvidia/)*
@@ -120,9 +120,9 @@ This step aims at loading the image into Minikube Container. Two options :
     docker images # To check for your image to be built
     ```
 
-### Launch a deployement
+### Launch a deployment
 
-Once your minikube instance is up and your image is accessible from it, it's time for deployement.
+Once your minikube instance is up and your image is accessible from it, it's time for deployment.
 
 Have a look at `./k8s/` as `.yaml` config files are there.
 
