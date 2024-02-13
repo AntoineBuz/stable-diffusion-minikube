@@ -15,7 +15,7 @@ Main difficulty is handling gpu usage while running apps in containers.
 
 This is supposed to run on an Ubuntu22.04 distro (dedicated cuda Docker image) but running it on another distribution can be made possible by changing the base image according to your environment. See [Nvidia on Docker Hub](https://hub.docker.com/r/nvidia/cuda/tags) for this purpose and edit `./Dockerfile` accordingly. 
 
-## Index
+## :bookmark_tabs: Index
 
 1. [Image Setup](#image-setup)
    1. [Prerequisites](#prerequisites)
@@ -28,7 +28,7 @@ This is supposed to run on an Ubuntu22.04 distro (dedicated cuda Docker image) b
     3. [Launch a deployment](#launch-a-deployment)
 3. [References](#references)
 
-## Image setup 
+## :wrench: Image setup 
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ docker run -d --gpus all -p 7860:7860 sd
 
 Access the app within your favorite browser on [127.0.0.1:7860](http://127.0.0.1:7860)
 
-## K8S deployment
+## :rocket: K8S deployment
 
 ### Start Cluster
 *This part is deeply inspired from [minikube documentation](https://minikube.sigs.k8s.io/docs/tutorials/nvidia/)*
