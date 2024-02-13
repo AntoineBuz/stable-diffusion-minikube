@@ -1,3 +1,6 @@
+
+![Nice banner](img/banner.png)
+
 # Stable Diffusion app, deployed with Minikube
 
 ![Static Badge](https://img.shields.io/badge/Minikube-blue)
